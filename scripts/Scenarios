@@ -1,0 +1,66 @@
+## **Table of Contents**
+-[User Registration](#UserRegistration)
+   -[Scenario 01: Successfull registration](#Scenario01:Successfullregistration)
+   -[Scenario 02: Registration with an email address twice](#Scenario02:Registrationwithanemailaddresstwice)
+   -[Scenario 03: Registration with an invalid email address](#Scenario01:Registrationwithaninvalidemailaddress)
+-[User Login](#UserLogin)
+   -[Scenario 01: Successfull Login](#Scenario01:Successfulllogin)
+   -[Scenario 02: Registration with incorrect credentials](#Scenario02:Registrationwithincorrectcredentials)
+-[Comment posting](#Commentposting)
+   -[Scenario 01: Successfull comment posting](#Scenario01:Successfullcommentposting)
+-[Navbar interaction](#Navbarinteraction)
+   -[Scenario 01: Successfull navbar interaction without registration](#Scenario01:Successfullnavbarinteractionwithoutregistration)
+   -[Scenario 01: Successfull navbar interaction with registration](#Scenario01:Successfullnavbarinteractionwithregistration)
+## **User registration**
+ 
+## **Scenario 01: Successfull registration**
+*Given the user is on "Register" page after clicking on Register button.
+*After entering the email address, name, password and confirming the password, the user account should be successfully registered. Another condition applies here is the 
+uniquness of name and email address : No email address can be used twice, and the validity and existence of the used email address.
+
+## **Scenario 01: Successfull registration**
+*Given the user is on "Register" page after clicking on Register button.
+*After entering an email address which has already been used to create an account before, name, password and confirming the password, the user will get an error message 
+of kind : {"error":"Email is already registered"} 
+
+## **Scenario 03: Registration with an invalid email address**
+*Given the user is on "Register" page after clicking on Register button.
+*After entering an invalid email address, name, password and confirming the password, the user will get an error message  kind : {"error":"Invalid or non-existent email address"}
+
+## **User Login**
+
+## **Scenario 01: Successfull Login**
+*Given the user is on "Login" page after clicking on Login button.
+*After entering a registered email address with its corresponding correct password, the user will be successfully be granted access to its account.
+
+## **Scenario 02: Registration with incorrect credentials**
+*Given the user is on "Login" page after clicking on Login button.
+*After entering incorrect credentials (either an unregistered/incorrect email address or incorrect password), the user will get two kinds of error messages : 
+- If the email address used for Login is unregistered : {"error":"User not found"}
+- If the password used for login is incorrect : {"error":"Invalid credentials"}
+
+
+## **Comment Posting**
+## **Scenario 01: Successfull comment posting**
+*Given the user is successfully logged in and he's on any article page.
+*At the buttom of the article, a comment section is found with two boxes. The user should fill the "Name" box with his name, and the "Comment boc" with his comment.
+After clicking on " Post Comment" the comment written by the user will be displayed with the name he wrote in the Name field.
+*Now the comment written will appear to any other user in the platform.
+
+
+## **Navbar Interaction**
+
+## **Scenario 01: Successfull navbar interaction without registration]
+*Given that the platform user is in the home page before registering or logging in.
+*Each tab in the navbar will redirect the user to a different page.
+*By clicking on About tab, the user will be redirected to About us page where he can find informations about the platform concept, values and perspectives.
+*By clicking on Contact tab, the user will be redirected to Contact us page where he can find the contact informations of the platform.
+*By clicking on Publish tab, authors who want to publish their articles in the platform can find the email address where they can send their articles too for evaluation,
+and they will receive a feedback withing 48h.
+
+## **Scenario 02: Successfull navbar interaction with registration]
+*Given that the user is already logged in and is in any page in the platform.
+*Additionally to About, Contact and Publish tabs, the user can find a Destinations tab as well.
+*By clicking on Destinations tab, a list of continents appears, the user must choose a continent eg: Europe. By doing this he will redirected to Europe page where he can
+find article cards for all europe destinations available in the platform.
+*Same is valif for Africa, America, Asia and Oceania.
