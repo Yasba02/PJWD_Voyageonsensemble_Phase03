@@ -39,7 +39,7 @@ To install and run this project on your local machine, follow these steps:
 1. Navigate to the root and search for a .envtest file and copy it.
 2. Create a new .env file in the Index directory, where you will paste the copied file.
 3. Replace the placeholders with your test database connection details as explained in the .envtest
-4. Run the application using : node index.js or nodemon index.js if you nodemon installed.
+4. Run the application using : node index.js or nodemon index.js if you have nodemon installed.
 5. Once the server is running, visit the following link in your browser: http://localhost:3000
 
 ## **Recommended IDE setup**
