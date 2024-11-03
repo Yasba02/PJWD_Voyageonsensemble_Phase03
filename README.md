@@ -55,7 +55,7 @@ VScode
 │ 
 ├── scripts # Scripts to run to set up the databases
 │ ├── setup.sql
-├── Backend
+├── Index
 │ ├── index.js
 ├── node_modules
 ├── route
@@ -98,11 +98,12 @@ VScode
 ├── package.json
 ├── package-lock.json
 ├── LICENSE.txt # License file
-└── README.md # This file
+├── README.md # This file
+└── PJWD_Screencast_Phase03.mp4
 ```
 
 ## **Usage**
-Voyageons ensemble is a travel blog, where travelers share articles about their experiences with the website administration, after approval the articles can be published to the public on behalf of the writers. The website supports commenting system to enable communication between readers and authors, or between readers themselves. 
+Voyageons ensemble is a travel blog, where travelers share articles about their experiences with the website administration, after approval the articles can be published to the public on behalf of the writers. The website supports commenting system to enable communication between readers and authors, or between readers themselves. You can watch a screencast that demonstrates how to navigate in the website in PJWD_Screencast_Phase03.mp4
 
 ## **User registration**
 In order to get the access to read the articles users must first click on "Sign in" button and register in the website, by providing a name, email-address and a password. Using an API the email-address is checked if it really exists or not. 
