@@ -13,6 +13,7 @@ Voyageons ensemble project is a university project of the course : "Java and Web
      - [User registration](#Userregistration)
      - [User authentification](#Userauthentification)
      - [Comment](#Comment)
+- [Scenarios](#Scenarios)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -116,6 +117,9 @@ If an account has aleady been created, the user can directly click on log in and
 At the buttom of each article, users have a space where they can write their thoughts, questions and opinions in the comment box, and posting it after filling the name box too. 
 Readers can also read the comments that other users have left in the comments list.
 
+
+## **Scenarios**
+You can find possible scenarios by accessing scripts and choosing the file "Scenarios".
 ## **Contributing**
 This project is currently not available for contribution, it's a university project. 
 However feel free to explore the code and learn from it.
